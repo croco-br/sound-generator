@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Generator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <script src="{{ url_for('static', path='js/index.js') }}" defer></script>
+</head>
+
+<body>
+    <section class="hero is-primary">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">Audio Generator</h1>
+                <h2 class="subtitle">Generate a sound wave in WAV format</h2>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="field">
+            <div class="generation-settings">
+                <label class="label" for="frequency">Escolha a frequência (Hz):</label>
+                <div class="control">
+                    <div class="select">
+                        <select id="frequency">
+                            <option value="c-note">C</option>
+                            <option value="d-note">D</option>
+                            <option value="e-note">E</option>
+                            <option value="f-note">F</option>
+                            <option value="g-note">G</option>
+                            <option value="a-note">A</option>
+                            <option value="b-note">B</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="field">
+            <label class="label">Duração (Segundos):</label>
+            <div class="control">
+                <div class="select">
+                    <select id="duration" required>
+                        <option value="" disabled selected>Selecione:</option>
+                        <option value="10">10</option>
+                        <option value="60">60</option>
+                        <option value="180">180</option>
+                        <option value="600">600</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="control">
+            <button class="button is-primary" id="generate-button" onclick="generateAudio()">Generate Audio</button>
+        </div>
+    </div>
+</body>
+
+</html>
