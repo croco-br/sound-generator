@@ -1,47 +1,14 @@
-async function generateAudio() {
-    show_loader();
+// Function to generate a sound for a given note and duration
+async function generateAudio(name) {
+    const response = await fetch(`/audio/${name}`);
 
-    const frequency = document.getElementById("frequency").value;
-    const duration = document.getElementById("duration").value;
-
-    // Create the data object
-    const data = { frequency, duration };
-
-    try {
-        const response = await fetch('/generate', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(data)
-        });
-
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-
-        const result = await response.json();
-        const url = result.url; // Assuming the server returns a JSON object with a URL
-
-        // Create a link to download the generated file
-        const link = document.createElement("a");
-        link.href = url;
-        link.download = "generated_sound.wav"; // Optional: specify the name for the downloaded file
-        link.click();
-    } catch (error) {
-        alert('Error generating audio'); // Corrected error message
-        console.error('Error:', error);
-    } finally {
-        hide_loader();
+    if (response.ok) {
+        const audioBlob = await response.blob();
+        const audioUrl = URL.createObjectURL(audioBlob);
+        const audioPlayer = document.getElementById("audio-player");
+        audioPlayer.src = audioUrl;
+        audioPlayer.play();
+    } else {
+        console.error("Audio not found:", response.statusText);
     }
-}
-
-function hide_loader() {
-    const loader = document.getElementById('generate-button');
-    loader.classList.remove('is-loading');
-}
-
-function show_loader() {
-    const loader = document.getElementById('generate-button');
-    loader.classList.add('is-loading');
 }

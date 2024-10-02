@@ -13,8 +13,7 @@
     <section class="hero is-primary">
         <div class="hero-body">
             <div class="container">
-                <h1 class="title">Audio Generator</h1>
-                <h2 class="subtitle">Generate a sound wave in WAV format</h2>
+                <h1 class="title">Gerador de Sons</h1>
             </div>
         </div>
     </section>
@@ -22,40 +21,32 @@
     <div class="container">
         <div class="field">
             <div class="generation-settings">
-                <label class="label" for="frequency">Escolha a frequência (Hz):</label>
-                <div class="control">
-                    <div class="select">
-                        <select id="frequency">
-                            <option value="c-note">C</option>
-                            <option value="d-note">D</option>
-                            <option value="e-note">E</option>
-                            <option value="f-note">F</option>
-                            <option value="g-note">G</option>
-                            <option value="a-note">A</option>
-                            <option value="b-note">B</option>
-                        </select>
-                    </div>
+                <h2 class="title">Clique no Chakra correspondente</h2>
+ 
+                <!-- Image with clickable areas -->
+                <div class="image-map">
+                    <img src="/static/img/chakras.jpg" alt="Click to generate specific sound" id="img-chakra"
+                        usemap="#soundMap">
+                    <map name="soundMap">
+                        <!-- Define clickable areas for each section (A, B, C, etc.) -->
+                        <area shape="rect" coords="0,0,1000,93" alt="G" href="javascript:void(0);"
+                            onclick="generateAudio('Sarashara')">
+                        <area shape="rect" coords="0,93,1000,186" alt="F" href="javascript:void(0);"
+                            onclick="generateAudio('Ajna')">
+                        <area shape="rect" coords="0,186,1000,279" alt="E" href="javascript:void(0);"
+                            onclick="generateAudio('Vishuddha')">
+                        <area shape="rect" coords="0,279,1000,372" alt="D" href="javascript:void(0);"
+                            onclick="generateAudio('Anahata')">
+                        <area shape="rect" coords="0,372,1000,465" alt="C" href="javascript:void(0);"
+                            onclick="generateAudio('Manipura')">
+                        <area shape="rect" coords="0,465,1000,558" alt="B" href="javascript:void(0);"
+                            onclick="generateAudio('Svadhishthana')">
+                        <area shape="rect" coords="0,558,1000,650" alt="A" href="javascript:void(0);"
+                            onclick="generateAudio('Muladhara')">
+                    </map>
                 </div>
+                <audio id="audio-player" controls></audio>
             </div>
-        </div>
-        <div class="field">
-            <label class="label">Duração (Segundos):</label>
-            <div class="control">
-                <div class="select">
-                    <select id="duration" required>
-                        <option value="" disabled selected>Selecione:</option>
-                        <option value="10">10</option>
-                        <option value="60">60</option>
-                        <option value="180">180</option>
-                        <option value="600">600</option>
-                    </select>
-                </div>
-            </div>
-        </div>
-        <div class="control">
-            <button class="button is-primary" id="generate-button" onclick="generateAudio()">Generate Audio</button>
-        </div>
-    </div>
 </body>
 
 </html>
