@@ -1,0 +1,18 @@
+
+add more sound effects
+
+Antialiasing: Add a low-pass filter to reduce aliasing, especially when combining multiple frequencies.
+
+Adjusting Amplitude Levels: Instead of a constant amplitude for each sine wave, you can apply different amplitudes for different frequencies based on their harmonic importance.
+
+Add Harmonics or Overtones: Incorporate harmonics or overtones for richer sounds. This can be done by adding multiple sine waves that are integer multiples of the fundamental frequency.
+
+Use of Envelopes: Apply an envelope (such as ADSR: Attack, Decay, Sustain, Release) to shape the amplitude of the sound over time, making it more dynamic.
+
+Improved Normalization: Normalization can be adjusted by considering the root mean square (RMS) instead of simply dividing by the maximum absolute value.
+
+Sample Rate and Bit Depth: Consider using a higher sample rate (e.g., 192000 Hz) for better audio fidelity, and ensure you're writing in a high-resolution format.
+
+
+add a option in the screen to compare each feature
+testar 32, 64bit
