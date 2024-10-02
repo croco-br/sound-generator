@@ -1,5 +1,4 @@
 
-add more sound effects
 
 Antialiasing: Add a low-pass filter to reduce aliasing, especially when combining multiple frequencies.
 
@@ -16,3 +15,5 @@ Sample Rate and Bit Depth: Consider using a higher sample rate (e.g., 192000 Hz)
 
 add a option in the screen to compare each feature
 testar 32, 64bit
+
+finish tabs

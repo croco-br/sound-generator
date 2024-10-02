@@ -22,6 +22,14 @@ app.mount("/static", StaticFiles(directory="app/static"), name="static")
 async def index(request: Request):
     return templates.TemplateResponse("index.html", {"request": request})
 
+@app.get("/tab1", response_class=HTMLResponse)
+async def render_tab1(request: Request):
+    return templates.TemplateResponse("tab1.html", {"request": request})
+
+@app.get("/tab2", response_class=HTMLResponse)
+async def render_tab2(request: Request):
+    return templates.TemplateResponse("tab2.html", {"request": request})
+
 
 @app.get("/audio/{note_name}")
 async def get_audio(note_name: str):

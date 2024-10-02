@@ -1,226 +1,178 @@
 {
-    "C3": {
-        "frequencies": [
-            130.81,
-            261.63,
-            523.25,
-            1046.5
-        ]
-    },
-    "C4": {
-        "frequencies": [
-            261.62,
-            523.26,
-            1046.5,
-            2093.0
-        ]
-    },
-    "C5": {
-        "frequencies": [
-            523.24,
-            1046.52,
-            2093.0,
-            4186.0
-        ]
-    },
-    "C6": {
-        "frequencies": [
-            1046.48,
-            2093.04,
-            4186.0,
-            8372.0
-        ]
-    },
-    "D3": {
-        "frequencies": [
-            146.83,
-            293.66,
-            587.33,
-            1174.66
-        ]
-    },
-    "D4": {
-        "frequencies": [
-            293.66,
-            587.32,
-            1174.66,
-            2349.32
-        ]
-    },
-    "D5": {
-        "frequencies": [
-            587.32,
-            1174.64,
-            2349.32,
-            4698.64
-        ]
-    },
-    "D6": {
-        "frequencies": [
-            1174.64,
-            2349.28,
-            4698.64,
-            9397.28
-        ]
-    },
-    "E3": {
-        "frequencies": [
-            164.81,
-            329.63,
-            659.25,
-            1318.51
-        ]
-    },
-    "E4": {
-        "frequencies": [
-            329.62,
-            659.26,
-            1318.5,
-            2637.02
-        ]
-    },
-    "E5": {
-        "frequencies": [
-            659.24,
-            1318.52,
-            2637.0,
-            5274.04
-        ]
-    },
-    "E6": {
-        "frequencies": [
-            1318.48,
-            2637.04,
-            5274.0,
-            10548.08
-        ]
-    },
-    "F3": {
-        "frequencies": [
-            174.61,
-            349.23,
-            698.46,
-            1396.91
-        ]
-    },
-    "F4": {
-        "frequencies": [
-            349.22,
-            698.46,
-            1396.92,
-            2793.82
-        ]
-    },
-    "F5": {
-        "frequencies": [
-            698.44,
-            1396.92,
-            2793.84,
-            5587.64
-        ]
-    },
-    "F6": {
-        "frequencies": [
-            1396.88,
-            2793.84,
-            5587.68,
-            11175.28
-        ]
-    },
-    "G3": {
-        "frequencies": [
-            196.0,
-            392.0,
-            784.0,
-            1568.0
-        ]
-    },
-    "G4": {
-        "frequencies": [
-            392.0,
-            784.0,
-            1568.0,
-            3136.0
-        ]
-    },
-    "G5": {
-        "frequencies": [
-            784.0,
-            1568.0,
-            3136.0,
-            6272.0
-        ]
-    },
-    "G6": {
-        "frequencies": [
-            1568.0,
-            3136.0,
-            6272.0,
-            12544.0
-        ]
-    },
-    "A3": {
-        "frequencies": [
-            220.0,
-            440.0,
-            880.0,
-            1760.0
-        ]
-    },
-    "A4": {
-        "frequencies": [
-            440.0,
-            880.0,
-            1760.0,
-            3520.0
-        ]
-    },
-    "A5": {
-        "frequencies": [
-            880.0,
-            1760.0,
-            3520.0,
-            7040.0
-        ]
-    },
-    "A6": {
-        "frequencies": [
-            1760.0,
-            3520.0,
-            7040.0,
-            14080.0
-        ]
-    },
-    "B3": {
-        "frequencies": [
-            246.94,
-            493.88,
-            987.77,
-            1975.53
-        ]
-    },
-    "B4": {
-        "frequencies": [
-            493.88,
-            987.76,
-            1975.54,
-            3951.06
-        ]
-    },
-    "B5": {
-        "frequencies": [
-            987.76,
-            1975.52,
-            3951.08,
-            7902.12
-        ]
-    },
-    "B6": {
-        "frequencies": [
-            1975.52,
-            3951.04,
-            7902.16,
-            15804.24
-        ]
+    "name": "Frequencies Collection",
+    "frequencias": {
+        "Solfeggio Frequencies": [
+            {
+                "frequency": "396 Hz",
+                "description": "Liberating frequency"
+            },
+            {
+                "frequency": "417 Hz",
+                "description": "Resonating frequency"
+            },
+            {
+                "frequency": "528 Hz",
+                "description": "Love frequency"
+            },
+            {
+                "frequency": "639 Hz",
+                "description": "Connecting frequency"
+            },
+            {
+                "frequency": "741 Hz",
+                "description": "Awakening frequency"
+            },
+            {
+                "frequency": "852 Hz",
+                "description": "Intuition frequency"
+            },
+            {
+                "frequency": "174 Hz",
+                "description": "Foundation frequency"
+            },
+            {
+                "frequency": "285 Hz",
+                "description": "Healing frequency"
+            },
+            {
+                "frequency": "963 Hz",
+                "description": "Frequency of the universe"
+            },
+            {
+                "frequency": "1074 Hz",
+                "description": "Spiritual frequency"
+            },
+            {
+                "frequency": "1174 Hz",
+                "description": "Balance frequency"
+            },
+            {
+                "frequency": "1152 Hz",
+                "description": "Spiritual purification"
+            },
+            {
+                "frequency": "2172 Hz",
+                "description": "Spiritual enlightenment"
+            }
+        ],
+        "Binaural Beats": [
+            {
+                "frequency": "1-4 Hz",
+                "description": "Deep sleep and relaxation"
+            },
+            {
+                "frequency": "4-8 Hz",
+                "description": "Meditation, creativity, deep relaxation"
+            },
+            {
+                "frequency": "8-12 Hz",
+                "description": "Relaxation, meditation, mental clarity"
+            },
+            {
+                "frequency": "12-30 Hz",
+                "description": "Alertness, focus, concentration"
+            },
+            {
+                "frequency": "30-100 Hz",
+                "description": "Heightened awareness, consciousness"
+            }
+        ],
+        "Brain Entrainment Frequencies": [
+            {
+                "frequency": "1-4 Hz",
+                "description": "Deep sleep and relaxation"
+            },
+            {
+                "frequency": "4-8 Hz",
+                "description": "Meditation, creativity, deep relaxation"
+            },
+            {
+                "frequency": "8-12 Hz",
+                "description": "Relaxation, meditation, mental clarity"
+            },
+            {
+                "frequency": "12-30 Hz",
+                "description": "Alertness, focus, concentration"
+            },
+            {
+                "frequency": "30-100 Hz",
+                "description": "Heightened awareness, consciousness"
+            }
+        ],
+        "Chakra Tones Frequencies": [
+            {
+                "frequency": "396 Hz",
+                "chakra": "Root Chakra (Muladhara)"
+            },
+            {
+                "frequency": "417 Hz",
+                "chakra": "Sacral Chakra (Svadhisthana)"
+            },
+            {
+                "frequency": "528 Hz",
+                "chakra": "Solar Plexus Chakra (Manipura)"
+            },
+            {
+                "frequency": "639 Hz",
+                "chakra": "Heart Chakra (Anahata)"
+            },
+            {
+                "frequency": "741 Hz",
+                "chakra": "Throat Chakra (Vishuddha)"
+            },
+            {
+                "frequency": "852 Hz",
+                "chakra": "Third Eye Chakra (Ajna)"
+            },
+            {
+                "frequency": "963 Hz",
+                "chakra": "Crown Chakra (Sahasrara)"
+            }
+        ],
+        "Other Healing Frequencies": {
+            "Schumann Resonance": "7.83 Hz",
+            "Quantum Healing Frequencies": [
+                "432 Hz",
+                "528 Hz",
+                "639 Hz",
+                "741 Hz",
+                "852 Hz"
+            ],
+            "Isochronic Tones": "Various frequencies matching brainwave ranges",
+            "Nikola Tesla 3-6-9 Frequencies": [
+                "333 Hz",
+                "639 Hz",
+                "999 Hz"
+            ],
+            "Angel Frequencies": [
+                "111 Hz",
+                "222 Hz",
+                "333 Hz",
+                "444 Hz",
+                "555 Hz",
+                "666 Hz",
+                "777 Hz",
+                "888 Hz"
+            ],
+            "Planet Frequencies": {
+                "Earth": "126.22 Hz",
+                "Moon": "210.42 Hz",
+                "Mercury": "141.27 Hz",
+                "Mars": "144.72 Hz",
+                "Venus": "221.23 Hz",
+                "Jupiter": "183.58 Hz",
+                "Saturn": "147.85 Hz",
+                "Uranus": "207.36 Hz",
+                "Neptune": "211.44 Hz",
+                "Pluto": "140.25 Hz"
+            },
+            "Royal Rife Frequencies": [
+                "660 Hz",
+                "727 Hz",
+                "787 Hz",
+                "880 Hz",
+                "2008 Hz"
+            ]
+        }
     }
 }
