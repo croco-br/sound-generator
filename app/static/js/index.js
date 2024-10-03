@@ -1,4 +1,33 @@
-// Function to generate a sound for a given note and duration
+document.addEventListener('DOMContentLoaded', function () {
+    // Get the elements for tabs and content
+    const chakrasBtn = document.getElementById('chakras-btn');
+    const frequenciesBtn = document.getElementById('frequencies-btn');
+    const tabContent = document.getElementById('tab-content');
+
+    // Initial content for Chakras (default)
+    tabContent.innerHTML = '<p>Chakra Sounds content goes here...</p>';
+
+    // Click event for Chakra Sounds tab
+    chakrasBtn.addEventListener('click', function () {
+        // Change active button styles
+        chakrasBtn.classList.add('is-active');
+        frequenciesBtn.classList.remove('is-active');
+
+        // Update content
+        tabContent.innerHTML = '<p>Chakra Sounds content goes here...</p>';
+    });
+
+    // Click event for Frequencies Selector tab
+    frequenciesBtn.addEventListener('click', function () {
+        // Change active button styles
+        frequenciesBtn.classList.add('is-active');
+        chakrasBtn.classList.remove('is-active');
+
+        // Update content
+        tabContent.innerHTML = '<p>Frequencies Selector content goes here...</p>';
+    });
+});
+
 async function generateAudio(name) {
     const response = await fetch(`/audio/${name}`);
 
@@ -13,45 +42,3 @@ async function generateAudio(name) {
     }
 }
 
-// Function to load tab content dynamically
-function loadTabContent(url, tabId) {
-    fetch(url)
-        .then(response => response.text())
-        .then(html => {
-            document.getElementById("tab-content").innerHTML = html;
-        });
-
-    // Handle active tab styling
-    document.querySelectorAll('.tabs li').forEach(tab => {
-        tab.classList.remove('is-active');
-    });
-    document.getElementById(tabId).classList.add('is-active');
-}
-
-// Event listeners for tabs
-document.getElementById('tab1-btn').addEventListener('click', function () {
-    loadTabContent('/tab1', 'tab1-btn');
-});
-document.getElementById('tab2-btn').addEventListener('click', function () {
-    loadTabContent('/tab2', 'tab2-btn');
-});
-
-// Initially load the first tab content
-window.onload = function () {
-    loadTabContent('/tab1', 'tab1-btn');
-};
-
-     // Handle tab switching
-     document.getElementById('tab1-btn').addEventListener('click', function() {
-        document.getElementById('tab1-content').classList.add('is-active');
-        document.getElementById('tab2-content').classList.remove('is-active');
-        this.classList.add('is-active');
-        document.getElementById('tab2-btn').classList.remove('is-active');
-    });
-
-    document.getElementById('tab2-btn').addEventListener('click', function() {
-        document.getElementById('tab2-content').classList.add('is-active');
-        document.getElementById('tab1-content').classList.remove('is-active');
-        this.classList.add('is-active');
-        document.getElementById('tab1-btn').classList.remove('is-active');
-    });
