@@ -22,10 +22,6 @@ app.mount("/static", StaticFiles(directory="app/static"), name="static")
 async def index(request: Request):
     return templates.TemplateResponse("index.html", {"request": request})
 
-@app.get("/chakras", response_class=HTMLResponse)
-async def render_tab1(request: Request):
-    return templates.TemplateResponse("chakras.html", {"request": request})
-
 @app.get("/frequencies", response_class=HTMLResponse)
 async def render_tab2(request: Request):
     return templates.TemplateResponse("frequencies.html", {"request": request})
