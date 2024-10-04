@@ -18,4 +18,4 @@ testar 32, 64bit
 
 make button round
 
-add more options (frequencies)
+add loop switch

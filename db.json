@@ -1,7 +1,107 @@
 {
+    "Liberating": {
+        "frequencies": [
+            396
+        ]
+    },
+    "Resonating": {
+        "frequencies": [
+            417
+        ]
+    },
+    "Love": {
+        "frequencies": [
+            528
+        ]
+    },
+    "Connecting": {
+        "frequencies": [
+            639
+        ]
+    },
+    "Awakening": {
+        "frequencies": [
+            741
+        ]
+    },
+    "Intuition": {
+        "frequencies": [
+            852
+        ]
+    },
+    "Foundation": {
+        "frequencies": [
+            174
+        ]
+    },
+    "Healing": {
+        "frequencies": [
+            285
+        ]
+    },
+    "Universe": {
+        "frequencies": [
+            963
+        ]
+    },
+    "Spiritual": {
+        "frequencies": [
+            1074
+        ]
+    },
+    "Balance": {
+        "frequencies": [
+            1174
+        ]
+    },
+    "Purification": {
+        "frequencies": [
+            1152
+        ]
+    },
+    "Enlightenment": {
+        "frequencies": [
+            2172
+        ]
+    },
+    "Delta": {
+        "frequencies": [
+            1,
+            4
+        ]
+    },
+    "Theta": {
+        "frequencies": [
+            4,
+            8
+        ]
+    },
+    "Alpha": {
+        "frequencies": [
+            8,
+            12
+        ]
+    },
+    "Beta": {
+        "frequencies": [
+            12,
+            30
+        ]
+    },
+    "Gamma": {
+        "frequencies": [
+            30,
+            100
+        ]
+    },
     "Muladhara": {
         "frequencies": [
             261.63
+        ]
+    },
+    "Muladhara2": {
+        "frequencies": [
+            396
         ]
     },
     "Svadhishthana": {
@@ -9,9 +109,19 @@
             293.66
         ]
     },
+    "Svadhishthana2": {
+        "frequencies": [
+            417
+        ]
+    },
     "Manipura": {
         "frequencies": [
             329.63
+        ]
+    },
+    "Manipura2": {
+        "frequencies": [
+            528
         ]
     },
     "Anahata": {
@@ -19,9 +129,19 @@
             349.23
         ]
     },
+    "Anahata2": {
+        "frequencies": [
+            639
+        ]
+    },
     "Vishuddha": {
         "frequencies": [
             392
+        ]
+    },
+    "Vishuddha2": {
+        "frequencies": [
+            741
         ]
     },
     "Ajna": {
@@ -29,9 +149,96 @@
             440
         ]
     },
+    "Ajna2": {
+        "frequencies": [
+            852
+        ]
+    },
     "Sarashara": {
         "frequencies": [
             493.88
+        ]
+    },
+    "Sarashara2": {
+        "frequencies": [
+            963
+        ]
+    },
+    "Schumann": {
+        "frequencies": [
+            47.83
+        ]
+    },
+    "Tesla": {
+        "frequencies": [
+            369,
+            396,
+            639,
+            693,
+            936,
+            963
+        ]
+    },
+    "Angels": {
+        "frequencies": [
+            111,
+            222,
+            333,
+            444,
+            555,
+            666,
+            777,
+            888
+        ]
+    },
+    "Earth": {
+        "frequencies": [
+            126.22
+        ]
+    },
+    "Moon": {
+        "frequencies": [
+            210.42
+        ]
+    },
+    "Mercury": {
+        "frequencies": [
+            141.27
+        ]
+    },
+    "Mars": {
+        "frequencies": [
+            144.72
+        ]
+    },
+    "Venus": {
+        "frequencies": [
+            221.23
+        ]
+    },
+    "Jupiter": {
+        "frequencies": [
+            183.58
+        ]
+    },
+    "Saturn": {
+        "frequencies": [
+            147.85
+        ]
+    },
+    "Uranus": {
+        "frequencies": [
+            207.36
+        ]
+    },
+    "Neptune": {
+        "frequencies": [
+            211.44
+        ]
+    },
+    "Pluto": {
+        "frequencies": [
+            140.25
         ]
     }
 }

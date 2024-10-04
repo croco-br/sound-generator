@@ -3,6 +3,11 @@ async function generateAudio(name) {
     const audioPlayer = document.getElementById("audio-player");
     stopAudio(audioPlayer)
 
+    if (!name) {
+        const frequency = document.getElementById("frequency-select");
+        name = frequency.value
+    }
+
     try {
         const response = await fetch(`/audio/${name}`);
         if (response.ok) {
