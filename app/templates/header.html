@@ -1,0 +1,28 @@
+<!-- templates/header.html -->
+<section class="bg-blue">
+    <div class="grid-container">
+        <div class="grid-x grid-padding-x">
+            <div class="cell text-center">
+                <h1 class="text-white text-4xl font-bold">Gerador de Sons</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-blue">
+    <div class="grid-container mt-3">
+        <ul class="menu align-center ">
+            <li>
+                <a id="chakras-btn" class="button {% if current_page == 'chakras' %}active{% else %}hollow{% endif %}"
+                    href="/">Chakras</a>
+            </li>
+            <li>
+                <a id="frequencies-btn"
+                    class="button {% if current_page == 'frequencies' %}active{% else %}hollow{% endif %}"
+                    href="/frequencies">Frequências</a>
+            </li>
+        </ul>
+
+        <h3 class="separator-center"></h3>
+    </div>
+</section>
