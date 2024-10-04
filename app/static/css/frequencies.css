@@ -1,0 +1,27 @@
+.loading-container{
+    display: flex;
+    flex-direction: column;
+    /* Stack items vertically */
+    align-items: center;
+    /* Center items horizontally */
+    gap: 10px;
+    /* Space between items */
+
+}
+
+audio {
+    width: 100%;
+    /* Make the audio player take full width of audio-div */
+    height: 40px;
+    /* Set a fixed height for the audio player */
+}
+
+.button {
+    width: 100%;
+    /* Make the button take full width of audio-div */
+    height: 40px;
+    /* Set a fixed height for the button */
+    border-radius: 50px;
+}
+
+

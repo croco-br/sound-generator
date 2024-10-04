@@ -8,7 +8,7 @@ with open("db.json", "r") as f:
 
 def generate_audio(name: str):
     sample_rate = 96000  # Sample rate in Hz
-    duration = 60  # Duration of the sound in seconds
+    duration = 30
     note_frequencies = db.get(name, {}).get("frequencies", [])
 
     if not note_frequencies:
@@ -31,4 +31,4 @@ def generate_audio(name: str):
     buffer = io.BytesIO()
     write(buffer, sample_rate, audio_data)
     buffer.seek(0)  # Rewind the buffer for reading
-    return buffer
+    return buffer 

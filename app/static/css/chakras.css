@@ -1,0 +1,23 @@
+#loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Space between items */
+}
+
+.audio-with-spinner {
+    display: flex; /* Use flexbox to align children in a row */
+    align-items: center; /* Center items vertically */
+    width: 100%; /* Optional: make it take full width */
+}
+
+audio {
+    width: 100%; /* Make the audio player take full width of audio-with-spinner */
+    height: 40px; /* Set a fixed height for the audio player */
+}
+
+.spinner {
+    margin-left: 10px; /* Space between audio player and spinner */
+    /* Add any additional styles for the spinner */
+}
+
