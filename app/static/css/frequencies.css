@@ -16,7 +16,7 @@ audio {
     /* Set a fixed height for the audio player */
 }
 
-.button {
+.btn  {
     width: 100%;
     /* Make the button take full width of audio-div */
     height: 40px;

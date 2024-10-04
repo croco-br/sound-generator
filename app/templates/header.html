@@ -11,14 +11,12 @@
 
 <section class="bg-blue">
     <div class="grid-container mt-3">
-        <ul class="menu align-center ">
+        <ul class="menu align-center simple">
             <li>
-                <a id="chakras-btn" class="button {% if current_page == 'chakras' %}active{% else %}hollow{% endif %}"
-                    href="/">Chakras</a>
+                <a class="{% if current_page == 'chakras' %}is-active{% else %}{% endif %}" href="/">Chakras</a>
             </li>
             <li>
-                <a id="frequencies-btn"
-                    class="button {% if current_page == 'frequencies' %}active{% else %}hollow{% endif %}"
+                <a class="{% if current_page == 'frequencies' %}is-active{% else %}{% endif %}"
                     href="/frequencies">Frequências</a>
             </li>
         </ul>
