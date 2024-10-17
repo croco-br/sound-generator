@@ -7,7 +7,7 @@ with open("db.json", "r") as f:
     db = json.load(f) 
 
 def generate_audio(name: str):
-    sample_rate = 96000  # Sample rate in Hz
+    sample_rate = 48000  # Sample rate in Hz
     duration = 30
     note_frequencies = db.get(name, {}).get("frequencies", [])
 
