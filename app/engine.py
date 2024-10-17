@@ -25,7 +25,7 @@ def generate_audio(name: str):
     audio_data /= np.max(np.abs(audio_data))
  
     # Convert to 16-bit PCM format
-    audio_data = (audio_data * 32767).astype(np.int16)
+    audio_data = (audio_data * 2147483647).astype(np.int32)
 
     # Create an in-memory bytes buffer for the WAV file
     buffer = io.BytesIO()

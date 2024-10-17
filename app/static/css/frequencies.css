@@ -1,27 +1,4 @@
-.loading-container{
-    display: flex;
-    flex-direction: column;
-    /* Stack items vertically */
-    align-items: center;
-    /* Center items horizontally */
-    gap: 10px;
-    /* Space between items */
-
+.button  {
+    margin-bottom: 45px !important;
+    border-radius: 20px
 }
-
-audio {
-    width: 100%;
-    /* Make the audio player take full width of audio-div */
-    height: 40px;
-    /* Set a fixed height for the audio player */
-}
-
-.btn  {
-    width: 100%;
-    /* Make the button take full width of audio-div */
-    height: 40px;
-    /* Set a fixed height for the button */
-    border-radius: 50px;
-}
-
-
